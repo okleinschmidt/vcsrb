@@ -1,0 +1,46 @@
+PATH
+  remote: .
+  specs:
+    vcsrb (0.1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    awesome_print (1.8.0)
+    domain_name (0.5.20180417)
+      unf (>= 0.0.5, < 1.0.0)
+    filesize (0.2.0)
+    http-cookie (1.0.3)
+      domain_name (~> 0.5)
+    json (2.1.0)
+    mime-types (3.2.2)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2018.0812)
+    netrc (0.11.0)
+    rainbow (3.0.0)
+    rake (12.3.2)
+    rest-client (2.0.2)
+      http-cookie (>= 1.0.2, < 2.0)
+      mime-types (>= 1.16, < 4.0)
+      netrc (~> 0.8)
+    thor (0.20.3)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.7.5)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  awesome_print
+  bundler
+  filesize
+  json
+  rainbow
+  rake
+  rest-client
+  thor
+  vcsrb!
+
+BUNDLED WITH
+   2.0.1
