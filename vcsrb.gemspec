@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Ole Kleinschmidt"]
   spec.email         = ["ole.kleinschmidt@ottogroup.com"]
 
-  spec.summary       = %q{vRA API Demo Client}
-  spec.description   = %q{vRA API Demo Client for ogcs.io MultiCloud Project}
-  spec.homepage      = ""
+  spec.summary       = %q{VMware Cloud Services - RubyGem}
+  spec.description   = %q{VMware Cloud Services - RubyGem}
+  spec.homepage      = "https://github.com/okleinschmidt/vcsrb"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
@@ -37,12 +37,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "thor"
   spec.add_development_dependency "rest-client"
   spec.add_development_dependency "json"
-  # spec.add_development_dependency "csv"
   spec.add_development_dependency "filesize"
   spec.add_development_dependency "rainbow"
-  # spec.add_development_dependency "terminal-table"
-  # spec.add_development_dependency "vmware-vra"
-  # spec.add_development_dependency "rbvmomi"
   spec.add_development_dependency "awesome_print"
-  # spec.add_development_dependency "net-ssh"
 end
