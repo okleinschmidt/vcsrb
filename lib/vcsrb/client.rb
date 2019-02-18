@@ -21,13 +21,22 @@ module Vcsrb
     end
 
     def auth_header
-      auth_header = {"Authorization" => "Bearer #{login[:token]}"}
+      headers = {}
+      headers["Accept"]        = "application/json"
+      headers["Content-Type"]  = "application/json"
+      headers["Authorization"] = "Bearer #{login[:token]}"
+      headers
     end
 
     def http_get(uri)
       response = get("#{@baseurl}#{uri}", auth_header)
       JSON.parse(response, :symbolize_names => true)
     end
+
+    def http_post(uri, data)
+      response = post("#{@baseurl}#{uri}", data, auth_header)
+    end
+
 
     private
 
