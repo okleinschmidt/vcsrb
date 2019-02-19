@@ -37,6 +37,9 @@ module Vcsrb
       response = post("#{@baseurl}#{uri}", data, auth_header)
     end
 
+    def http_patch(uri, data)
+      response = patch("#{@baseurl}#{uri}", data, auth_header)
+    end
 
     private
 
@@ -46,6 +49,10 @@ module Vcsrb
 
     def post(url, payload, headers={}, &block)
       execute_request(:method => :post, :url => url, :payload => payload, :headers => headers, &block)
+    end
+
+    def patch(url, payload, headers={}, &block)
+      execute_request(:method => :patch, :url => url, :payload => payload, :headers => headers, &block)
     end
 
     def put(url, payload, headers={}, &block)
