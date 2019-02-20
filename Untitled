@@ -1,0 +1,27 @@
+class Mammal
+  def breathe
+    print "inhale and exhale\n"
+    print "Name: #{name}"
+  end
+
+end
+
+class Cat<Mammal
+  def speak
+    print "Meow\n"
+    print "Name: #{name}"
+  end
+
+end
+
+class Client
+  def get(url)
+    print "URL: #{url}\n"
+  end
+end
+
+class Project < Client
+  def bar
+    print "Foobar!\n"
+  end
+end
