@@ -41,6 +41,36 @@ module Vcsrb
       response = patch("#{@baseurl}#{uri}", data, auth_header)
     end
 
+    def http_delete(uri)
+      response = delete("#{@baseurl}#{uri}", auth_header)
+      JSON.parse(response, :symbolize_names => true)
+    end
+
+    def list
+      items = http_get(@uri)
+    end
+
+    def by_id(id)
+     items = http_get("#{@uri}/#{id}")
+    end
+
+    def by_name(name)
+      items = http_get(@uri)
+      items[:content].select { |x| x[:name].eql? name }
+    end
+    
+    def create(data)
+      http_post(@uri, data)
+    end
+
+    def update(data)
+      http_patch(@uri, data)
+    end
+
+    def delete(id)
+      items = http_delete("#{@uri}/#{id}")
+    end
+
     private
 
     def get(url, headers={}, &block)
