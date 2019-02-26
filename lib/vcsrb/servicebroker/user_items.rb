@@ -1,10 +1,10 @@
 module Vcsrb
   class ServiceBroker
-    class UserItems < Vcsrb::Client
+    class UserCatalogItems < Vcsrb::Client
       include Enumerable
 
       def initialize(*args)
-        @uri = "/library/api/items"
+        @uri = "/catalog/api/items"
         super
       end
 
