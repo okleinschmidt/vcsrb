@@ -1,8 +1,13 @@
 # Vcsrb
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/vcsrb`. To experiment with that code, run `bin/console` for an interactive prompt.
+Working prototype of a RubyGem to interact with the new VMware Cloud Services API as well as VMware Cloud Assembly.
 
-TODO: Delete this and the text above, and describe your gem
+https://www.mgmt.cloud.vmware.com/iaas/api/swagger/ui/
+https://api.mgmt.cloud.vmware.com/catalog/api/swagger/swagger-ui.html?urls.primaryName=catalog
+https://api.mgmt.cloud.vmware.com/blueprint/api/swagger/swagger-ui.html
+https://api.mgmt.cloud.vmware.com/deployment/api/swagger/swagger-ui.html?urls.primaryName=deployments
+
+More docu coming soon...
 
 ## Installation
 
@@ -22,7 +27,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+soon...
 
 ## Development
 
@@ -37,7 +42,3 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 ## License
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
-## Code of Conduct
-
-Everyone interacting in the Vcsrb project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/vcsrb/blob/master/CODE_OF_CONDUCT.md).
